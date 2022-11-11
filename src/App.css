@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::placeholder {
+    font-size: 0.75rem;
+}
+
+.images {
+    animation: slide 15s linear infinite forwards;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-200%);
+    }
+}
