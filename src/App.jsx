@@ -3,10 +3,10 @@ import "./App.css";
 function App() {
 	return (
 		<div className="App">
-			<div className="main-container">
+			<div className="main-container text-center">
 				<section className="hero-section">
 					<div className="r-side">
-						<div className="text-content text-center">
+						<div className="text-content">
 							<h2 className="hero-heading font-bold text-[1.7rem] ">
 								Rent a <span className="text-meta">Place</span> away from <span className="text-meta">Home</span> in the{" "}
 								<span className="text-meta">Metaverse</span>
@@ -31,12 +31,15 @@ function App() {
 						<img src="./src/assets/group 4028.svg" alt="" className=" w-[80%] mx-auto" />
 					</div>
 				</section>
-				<section className="clients overflow-hidden  bg-meta">
+				<div className="clients overflow-hidden  bg-meta">
 					<div className="images py-2 flex gap-[4rem]  translate-x-full">
 						<img src="./src/assets/group 59537.svg" alt="" className="w-[50%]" />
 						<img src="./src/assets/group 4040.svg" alt="" className="w-[50%]" />
 						<img src="./src/assets/frame 4041.svg" alt="" className="w-[50%]" />
 					</div>
+				</div>
+				<section className="places">
+					<h2 className="places-heading font-bold text-[1.5rem]">Inspiration for your next adventure</h2>
 				</section>
 			</div>
 		</div>
