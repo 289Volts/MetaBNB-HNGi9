@@ -1,6 +1,6 @@
 import "./App.css";
 import Place from "./components/place";
-import Navbar from "./components/navbar";
+// import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import data from "./images.jsx";
 // import { Link } from "react-router-dom";
@@ -20,7 +20,7 @@ function App() {
 	});
 	return (
 		<div className="App">
-			<Navbar />
+			{/* <Navbar /> */}
 			<div className="main-container text-center">
 				<section className="hero-section flex flex-col gap-7 pb-7">
 					<div className="r-side flex flex-col gap-4">
