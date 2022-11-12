@@ -46,14 +46,14 @@ function App() {
 						</div>
 					</div>
 					<div className="l-side">
-						<img src="../src/assets/group 4028.svg" alt="" className=" w-[80%] mx-auto" />
+						<img src="./group 4028.svg" alt="" className=" w-[80%] mx-auto" />
 					</div>
 				</section>
 				<div className="clients overflow-hidden  bg-meta">
 					<div className="images py-2 flex gap-[4rem]  translate-x-full">
-						<img src="../src/assets/group 59537.svg" alt="" className="w-[36%]" />
-						<img src="./src/assets/group 4040.svg" alt="" className="w-[36%]" />
-						<img src="./src/assets/frame 4041.svg" alt="" className="w-[36%]" />
+						<img src="./group 59537.svg" alt="" className="w-[36%]" />
+						<img src="./group 4040.svg" alt="" className="w-[36%]" />
+						<img src="./frame 4041.svg" alt="" className="w-[36%]" />
 					</div>
 				</div>
 				<section className="places-container py-12 ">
@@ -77,7 +77,7 @@ function App() {
 						</div>
 					</div>
 					<div className="l-side">
-						<img src="./src/assets/frame 59546.svg" alt="" className="about-metaverse__img" />
+						<img src="./frame 59546.svg" alt="" className="about-metaverse__img" />
 					</div>
 				</section>
 				<Footer/>

@@ -4,18 +4,18 @@ const footer = () => {
 	return (
 		<div className="bg-black text-white py-9 px-5">
 			<a href="/" className="footer-logo mb-7 block">
-				<img src="./src/assets/group.svg" alt="" className="mx-auto" />
+				<img src="./group.svg" alt="" className="mx-auto" />
 			</a>
 			<div className="footer-social-links-w-copyright hidden">
 				<div className="footer-social-links">
 					<a href="" className="footer-social-link">
-						<img src="./src/assets/facebook-263-721950.svg" alt="" className="" />
+						<img src="./facebook-263-721950.svg" alt="" className="" />
 					</a>
 					<a href="" className="footer-social-link">
-						<img src="./src/assets/instagram-216-721958.svg" alt="" className="" />
+						<img src="./instagram-216-721958.svg" alt="" className="" />
 					</a>
 					<a href="" className="footer-social-link">
-						<img src="./src/assets/twitter-241-721979.svg" alt="" className="" />
+						<img src="./twitter-241-721979.svg" alt="" className="" />
 					</a>
 				</div>
 				<div className="footer-copyright text-[#F7F7F7]">
@@ -71,9 +71,9 @@ const footer = () => {
 				
 			</div><div className="footer-social-links__mobile flex flex-col gap-3 mt-3">
 					<div className="footer-social-links flex justify-center gap-5">
-						<img src="./src/assets/facebook-263-721950.svg" alt="" className="" />
-						<img src="./src/assets/instagram-216-721958.svg" alt="" className="" />
-						<img src="./src/assets/twitter-241-721979.svg" alt="" className="" />
+						<img src="./facebook-263-721950.svg" alt="" className="" />
+						<img src="./instagram-216-721958.svg" alt="" className="" />
+						<img src="./twitter-241-721979.svg" alt="" className="" />
 					</div>
 					<div className="footer-copyright">
 						<p>&copy; 2022 Metabnb</p>
