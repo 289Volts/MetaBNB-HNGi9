@@ -1,9 +1,11 @@
 import "./App.css";
-import Place from './components/place'
-import data from "./images.jsx"
+import Place from "./components/place";
+import Navbar from "./components/navbar";
+import Footer from "./components/footer";
+import data from "./images.jsx";
+// import { Link } from "react-router-dom";
 
 function App() {
-	console.log(data)
 	const places = data.map((item) => {
 		return (
 			<Place
@@ -18,11 +20,12 @@ function App() {
 	});
 	return (
 		<div className="App">
+			<Navbar />
 			<div className="main-container text-center">
-				<section className="hero-section">
-					<div className="r-side">
+				<section className="hero-section flex flex-col gap-7 pb-7">
+					<div className="r-side flex flex-col gap-4">
 						<div className="text-content">
-							<h2 className="hero-heading font-bold text-[1.7rem] ">
+							<h2 className="hero-heading font-bold text-[1.7rem] leading-[1.06] mb-4">
 								Rent a <span className="text-meta">Place</span> away from <span className="text-meta">Home</span> in the{" "}
 								<span className="text-meta">Metaverse</span>
 							</h2>
@@ -48,17 +51,36 @@ function App() {
 				</section>
 				<div className="clients overflow-hidden  bg-meta">
 					<div className="images py-2 flex gap-[4rem]  translate-x-full">
-						<img src="./src/assets/group 59537.svg" alt="" className="w-[50%]" />
-						<img src="./src/assets/group 4040.svg" alt="" className="w-[50%]" />
-						<img src="./src/assets/frame 4041.svg" alt="" className="w-[50%]" />
+						<img src="./src/assets/group 59537.svg" alt="" className="w-[36%]" />
+						<img src="./src/assets/group 4040.svg" alt="" className="w-[36%]" />
+						<img src="./src/assets/frame 4041.svg" alt="" className="w-[36%]" />
 					</div>
 				</div>
-				<section className="places-container">
-					<h2 className="places-heading font-bold text-[1.5rem]">Inspiration for your next adventure</h2>
-					<div className="places px-3">
-						{places}
+				<section className="places-container py-12 ">
+					<h2 className="places-heading font-bold text-[1.5rem] mb-5">Inspiration for your next adventure</h2>
+					<div className="places px-3 flex flex-col gap-5">{places}</div>
+				</section>
+				<section className="about-metaverse bg-meta p-7 text-white flex flex-col gap-10">
+					<div className="r-side">
+						<div className="text-content space-y-8 text-[0.875rem]">
+							<h2 className="about-metaverse__heading text-[1.8rem]">Metabnb NFTs</h2>
+							<p className="about-metaverse__copy">
+								Discover our NFT gift cards collection. Loyal customers gets amazing gift cards which are traded as
+								NFTs. These NFTs gives our cutomer access to loads of our exclusive services.
+							</p>
+							<a
+								href="/nfts"
+								className="about-metaverse__link text-meta bg-white py-2 px-4 rounded-[8px] inline-block "
+							>
+								Learn more
+							</a>
+						</div>
+					</div>
+					<div className="l-side">
+						<img src="./src/assets/frame 59546.svg" alt="" className="about-metaverse__img" />
 					</div>
 				</section>
+				<Footer/>
 			</div>
 		</div>
 	);
