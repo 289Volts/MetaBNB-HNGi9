@@ -1,6 +1,21 @@
 import "./App.css";
+import Place from './components/place'
+import data from "./images.jsx"
 
 function App() {
+	console.log(data)
+	const places = data.map((item) => {
+		return (
+			<Place
+				key={item.id}
+				img={item.img}
+				location="Desert king"
+				price="1MBT per night"
+				distance="2345km away"
+				availability="available for 2weeks stay"
+			/>
+		);
+	});
 	return (
 		<div className="App">
 			<div className="main-container text-center">
@@ -40,10 +55,10 @@ function App() {
 				</div>
 				<section className="places-container">
 					<h2 className="places-heading font-bold text-[1.5rem]">Inspiration for your next adventure</h2>
-					<div className="places">
-
+					<div className="places px-3">
+						{places}
 					</div>
- </section>
+				</section>
 			</div>
 		</div>
 	);
