@@ -41,9 +41,9 @@ function App() {
 				<section className="places-container">
 					<h2 className="places-heading font-bold text-[1.5rem]">Inspiration for your next adventure</h2>
 					<div className="places">
-						
+
 					</div>
-				</section>
+ </section>
 			</div>
 		</div>
 	);
