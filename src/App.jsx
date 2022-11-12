@@ -38,8 +38,11 @@ function App() {
 						<img src="./src/assets/frame 4041.svg" alt="" className="w-[50%]" />
 					</div>
 				</div>
-				<section className="places">
+				<section className="places-container">
 					<h2 className="places-heading font-bold text-[1.5rem]">Inspiration for your next adventure</h2>
+					<div className="places">
+						
+					</div>
 				</section>
 			</div>
 		</div>
