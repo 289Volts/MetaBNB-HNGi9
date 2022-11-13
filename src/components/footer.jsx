@@ -23,7 +23,7 @@ const footer = () => {
 				</div>
 			</div>
 			<div className="footer-links flex flex-wrap justify-between mb-7">
-				<div className="footer-links__community flex flex-col text-[0.77rem]">
+				<div className="footer-links__community flex flex-col text-[0.85rem]">
 					<h2 className="footer-links__community-heading text-base">Community</h2>
 					<a href="" className="footer-links__community-link text-[#F1F3F9]">
 						NFT
@@ -38,7 +38,7 @@ const footer = () => {
 						Discord
 					</a>
 				</div>
-				<div className="footer-links__places flex flex-col text-[0.77rem]">
+				<div className="footer-links__places flex flex-col text-[0.85rem]">
 					<h2 className="footer-links__places-heading text-base">Places</h2>
 					<a href="" className="footer-links__places-link text-[#F1F3F9]">
 						Castle
@@ -53,7 +53,7 @@ const footer = () => {
 						Learn more
 					</a>
 				</div>
-				<div className="footer-links__about-us flex flex-col text-[0.77rem]">
+				<div className="footer-links__about-us flex flex-col text-[0.85rem]">
 					<h2 className="footer-links__about-us-heading text-base">About-us</h2>
 					<a href="" className="footer-links__about-us-link text-[#F1F3F9]">
 						Road map
@@ -75,7 +75,7 @@ const footer = () => {
 						<img src="./instagram-216-721958.svg" alt="" className="" />
 						<img src="./twitter-241-721979.svg" alt="" className="" />
 					</div>
-					<div className="footer-copyright">
+					<div className="footer-copyright text-center">
 						<p>&copy; 2022 Metabnb</p>
 					</div>
 				</div>
