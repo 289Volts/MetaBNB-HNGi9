@@ -17,7 +17,7 @@ const Home = () => {
 		});
   return (
     <div className="main-container text-center md:text-left">
-				<section className="hero-section flex flex-col gap-7 pb-7 md:flex-row md:items-center md:justify-between md:w-[90%] md:mx-auto">
+				<section className="hero-section flex flex-col gap-7 pb-7 md:pb-[4.1875rem] md:flex-row md:items-center md:justify-between md:w-[90%] md:mx-auto">
 					<div className="r-side flex flex-col gap-4 md:w-[50%]">
 						<div className="text-content px-4 md:px-0">
 							<h2 className="hero-heading font-bold text-[1.7rem] leading-[1.06] mb-4 ">
@@ -50,11 +50,12 @@ const Home = () => {
 						<img src="./images/brand-opensea.svg" alt="" className="w-[36%] md:w-[22%]" />
 					</div>
 				</div>
-				<section className="places-container py-12 md:w-[90%] md:mx-auto">
+				<section className="places-container py-14 md:w-[90%] md:mx-auto">
 					<h2 className="places-heading font-bold text-[1.5rem] mb-5 md:text-center md:text-[2rem]">Inspiration for your next adventure</h2>
-					<div className="places px-3 flex flex-col gap-5 md:px-0 md:flex-row md:flex-wrap md:justify-between">{places}</div>
+					<div className="places px-3 flex flex-col gap-6 md:px-0 md:flex-row md:flex-wrap md:justify-between">{places}</div>
 				</section>
-				<section className="about-metaverse bg-meta p-10 text-white flex flex-col gap-10 md:flex-row md:justify-between md:items-center">
+		  <section className="about-metaverse bg-meta p-10 text-white flex flex-col gap-10 md:flex-row md:justify-between md:items-center">
+			   {/* md:p-[6.25rem] */}
 					<div className="r-side md:w-[50%]">
 						<div className="text-content space-y-7 text-[0.875rem]">
 							<h2 className="about-metaverse__heading text-[1.85rem]">Metabnb NFTs</h2>
