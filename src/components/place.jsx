@@ -8,7 +8,7 @@ function place(props) {
 	// 	}, [isFavourite]);
 
 	return (
-		<div className="place-container p-4 space-y-[10px] text-[0.89rem] border-2 shadow-md rounded-[14px]">
+		<div className="place-container p-4 space-y-[10px] text-[0.89rem] border-2 shadow-md rounded-[14px] md:w-[48%]">
 			<div className="place-img relative">
 				<img src={props.img} alt="" className="w-full" />
 				<div className="heart absolute top-[5%] right-[5%]" onClick={() => setIsFavorite((prevState) => !prevState)}>
@@ -44,7 +44,7 @@ function place(props) {
 				<p className="right font-bold text-right">{props.availability}</p>
 			</div>
 			<div className="star">
-				<img src="./Frame 59528.svg" alt="" className="stars w-[30%]" />
+				<img src="./icons/place-stars.svg" alt="" className="stars w-[30%]" />
 			</div>
 		</div>
 	);
