@@ -2,7 +2,7 @@ import "./App.css";
 import Home from "./components/home";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
-import Places from "./components/places-to-stay";
+import Places from "./components/placesToStay";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // import { Link } from "react-router-dom";
