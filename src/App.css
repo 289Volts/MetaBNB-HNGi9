@@ -10,6 +10,15 @@
     outline: none;
 }
 
+.metamask-text, .wallet-connect-text {
+    font-family: 'Sora', sans-serif;
+}
+
+.metamask-container, .walletconnect-container {
+    border: 1px solid #CFD8DC;
+    border-radius: 12px;
+}
+
 
 input {
     background-size: 12.5%;

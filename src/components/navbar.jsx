@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "/images/logo-gradient.svg";
 import { Link } from "react-router-dom";
 import Button from "../components/button";
+import Modal from "./modal";
 
 const navbar = () => {
 	const links = [
@@ -23,7 +24,7 @@ const navbar = () => {
 		},
 	];
 
-	const [open, setOpen] = React.useState(false);
+	const [isOpen, setIsOpen] = React.useState(false);
 
 	return (
 		<>
@@ -49,7 +50,7 @@ const navbar = () => {
 							</div>
 							<div
 								className="toggle text-3xl text-meta mt-[0.6rem] md:text-[2.7rem] md:mt-[0.24rem] lg:hidden"
-								onClick={() => setOpen((prevState) => !prevState)}
+								onClick={() => setIsOpen((prevState) => !prevState)}
 							>
 								<ion-icon name={`${open ? "close" : "menu"}`}></ion-icon>
 							</div>
@@ -59,7 +60,7 @@ const navbar = () => {
 			</nav>
 			{/* Mobile Nav */}
 			<div
-				className={`mobile-nav flex flex-col gap-6 bg-white absolute z-40 w-full h-screen pt-0 pl-6 duration-500 ${
+				className={`mobile-nav flex flex-col gap-6 bg-white fixed z-40 w-full h-screen top-[11%] pt-9 pl-6 duration-500 ${
 					open ? "left-0" : "left-[-100%]"
 				} lg:hidden md:pl-[3.5rem]`}
 			>
@@ -73,9 +74,10 @@ const navbar = () => {
 					))}
 				</ul>
 				<div className="nav-cta">
-					<Button />
+					<Button onClick={() => setIsOpen(true)} />
 				</div>
 			</div>
+			
 		</>
 	);
 };

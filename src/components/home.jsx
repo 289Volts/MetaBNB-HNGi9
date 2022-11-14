@@ -1,28 +1,34 @@
-import React from 'react'
+import React from "react";
 import Place from "./place";
+import Modal from "./modal";
 import imagesUrls from "../images.jsx";
-import '../App.css';
+import "../App.css";
 
 const Home = () => {
-    const places = imagesUrls.map((item) => {
-			return (
-				<Place
-					key={item.id}
-					img={item.img}
-					location="Desert king"
-					price="1MBT per night"
-					distance="2345km away"
-					availability="available for 2weeks stay"
-				/>
-			);
-		});
-  return (
-		<div className="main-container text-center md:text-left">
+	const places = imagesUrls.map((item) => {
+		return (
+			<Place
+				key={item.id}
+				img={item.img}
+				location="Desert king"
+				price="1MBT per night"
+				distance="2345km away"
+				availability="available for 2weeks stay"
+			/>
+		);
+	});
+
+	const [isOpen, setIsOpen] = React.useState(false);
+
+	return (
+		<div className={`main-container text-center md:text-left inset-0 ${isOpen ? 'relative' : "static" }`}>
+			{isOpen && <Modal setIsOpen={setIsOpen} />}
 			<section className="hero-section flex flex-col gap-7 pb-7 mt-[6rem] md:pb-[4.1875rem] md:flex-row md:items-center md:justify-between md:w-[90%] md:mx-auto lg:w-[87%] xl:w-[80%] md:mt-[7.5rem]">
+				<button onClick={() => setIsOpen(true)}>click me</button>
 				<div className="r-side px-4 flex flex-col gap-4 md:w-[54%] md:px-0 lg:gap-[3rem] lg:w-[60%] xl:w-[48%]">
 					<div className="text-content">
 						<h2 className="hero-heading font-bold text-[1.7rem] leading-[1.06] mb-5 md:mb-[2.6rem] lg:text-4xl lg:leading-[1.4] xl:text-[3rem]">
-							Rent a <span className="text-meta">Place</span> away from <span className="text-meta">Home</span> in the{" "}
+							Rent a <span className="text-meta">Place</span> away from <span className="text-meta">Home</span> in the
 							<span className="text-meta">Metaverse</span>
 						</h2>
 						<p className="text-base lg:text-[1.2rem] lg:leading-7 xl:text-[1.5rem] xl:leading-9">
@@ -88,6 +94,6 @@ const Home = () => {
 			</section>
 		</div>
 	);
-}
+};
 
-export default Home
+export default Home;
