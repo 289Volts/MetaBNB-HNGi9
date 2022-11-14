@@ -4,10 +4,11 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				"meta": "#A02279",
+				meta: "#A02279",
 			},
 			backgroundImage: {
-				"buttonColor": "linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%)",
+				buttonColor: "linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%)",
+				"settings": "url('/images/location-setting.svg')",
 			},
 		},
 	},

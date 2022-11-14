@@ -48,7 +48,7 @@ const navbar = () => {
 								<Button />
 							</div>
 							<div
-								className="toggle text-3xl mt-[0.6rem] md:text-[2.7rem] md:mt-[0.24rem] lg:hidden"
+								className="toggle text-3xl text-meta mt-[0.6rem] md:text-[2.7rem] md:mt-[0.24rem] lg:hidden"
 								onClick={() => setOpen((prevState) => !prevState)}
 							>
 								<ion-icon name={`${open ? "close" : "menu"}`}></ion-icon>
