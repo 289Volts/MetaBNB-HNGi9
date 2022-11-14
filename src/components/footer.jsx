@@ -3,10 +3,10 @@ import React from "react";
 const footer = () => {
 	return (
 		<footer className="bg-black">
-			<div className="text-white py-9 px-5 md:flex md:justify-between md:w-[90%] md:mx-auto md:px-0 md:pt-[3.875rem]">
-				<div className="footer-logo-w-cocial-links md:flex md:flex-col md:justify-between">
+			<div className="text-white py-9 px-5 md:flex md:justify-between md:w-[90%] md:mx-auto md:px-0 md:pt-[3.875rem] lg:w-[81.5%] xl:w-[78%]">
+				<div className="footer-logo-w-social-links md:flex md:flex-col md:justify-between">
 					<a href="/" className="footer-logo mb-7 block md:mb-0">
-						<img src="./images/logo-white.svg" alt="" className="mx-auto md:w-[74%] md:mx-0" />
+						<img src="./images/logo-white.svg" alt="" className="mx-auto md:w-[74%] md:mx-0 lg:w-[82%]" />
 					</a>
 					<div className="footer-social-links-w-copyright hidden md:flex md:flex-col md:gap-14">
 						<div className="footer-social-links flex md:gap-9">
@@ -25,9 +25,11 @@ const footer = () => {
 						</div>
 					</div>
 				</div>
-				<div className="footer-links flex justify-between mb-7 text-center md:w-[56%] md:text-left">
+				<div className="footer-links flex justify-between mb-7 text-center md:w-[56%] md:text-left lg:translate-x-[-4rem]">
 					<div className="footer-links__community flex flex-col text-[0.85rem] md:text-[0.875rem]">
-						<h2 className="footer-links__community-heading text-base mb-[1.275rem] md:text-[1.125rem]">Community</h2>
+						<h2 className="footer-links__community-heading text-base font-bold mb-[1.275rem] md:text-[1.125rem]">
+							Community
+						</h2>
 						<div className="space-y-3 flex flex-col">
 							<a href="" className="footer-links__community-link text-[#F1F3F9]">
 								NFT
@@ -44,7 +46,9 @@ const footer = () => {
 						</div>
 					</div>
 					<div className="footer-links__places flex flex-col text-[0.85rem] md:text-[0.875rem]">
-						<h2 className="footer-links__places-heading text-base mb-[1.275rem] md:text-[1.125rem]">Places</h2>
+						<h2 className="footer-links__places-heading text-base font-bold mb-[1.275rem] md:text-[1.125rem]">
+							Places
+						</h2>
 						<div className="flex flex-col space-y-3">
 							<a href="" className="footer-links__places-link text-[#F1F3F9]">
 								Castle
@@ -61,7 +65,9 @@ const footer = () => {
 						</div>
 					</div>
 					<div className="footer-links__about-us flex flex-col text-[0.85rem] md:text-[0.875rem]">
-						<h2 className="footer-links__about-us-heading text-base mb-[1.275rem] md:text-[1.125rem]">About-us</h2>
+						<h2 className="footer-links__about-us-heading text-base font-bold mb-[1.275rem] md:text-[1.125rem]">
+							About-us
+						</h2>
 						<div className="flex flex-col space-y-3">
 							<a href="" className="footer-links__about-us-link text-[#F1F3F9]">
 								Road map

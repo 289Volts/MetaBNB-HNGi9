@@ -6,6 +6,12 @@
     font-size: 0.75rem;
 }
 
+@media (min-width: 768px) {
+    ::placeholder {
+    font-size: 1rem;
+}
+}
+
 .images {
     animation: slide 15s linear infinite forwards;
 }
