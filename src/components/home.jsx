@@ -63,7 +63,6 @@ const Home = () => {
 				</div>
 			</section>
 			<section className="about-metaverse bg-meta p-10 text-white flex flex-col md:p-[6.3rem] md:flex-row md:justify-between md:items-center lg:px-0">
-				{/* md:p-[6.25rem] */}
 				<div className="flex flex-col gap-10 md:flex-row md:justify-between md:items-center lg:w-[87%] lg:mx-auto lg:justify-between xl:w-[80%]">
 					<div className="r-side md:w-[50%] xl:w-[35%]">
 						<div className="text-content space-y-7 text-[0.875rem] lg:space-y-12">

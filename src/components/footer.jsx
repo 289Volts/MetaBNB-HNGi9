@@ -3,7 +3,7 @@ import React from "react";
 const footer = () => {
 	return (
 		<footer className="bg-black">
-			<div className="text-white py-9 px-5 md:flex md:justify-between md:w-[90%] md:mx-auto md:px-0 md:pt-[3.875rem] lg:w-[81.5%] xl:w-[78%]">
+			<div className="text-white py-9 px-5 md:flex md:justify-between md:w-[90%] md:mx-auto md:px-0 md:pt-[3.875rem] lg:w-[81.5%] xl:w-[76%]">
 				<div className="footer-logo-w-social-links md:flex md:flex-col md:justify-between">
 					<a href="/" className="footer-logo mb-7 block md:mb-0">
 						<img src="./images/logo-white.svg" alt="" className="mx-auto md:w-[74%] md:mx-0 lg:w-[82%]" />
