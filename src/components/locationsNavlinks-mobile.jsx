@@ -2,11 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const locationsNavlinksMobile = () => {
-	const firstLink = {
-		path: "",
-		mainTitle: "Restaurants",
-	};
 	const links = [
+		{
+			path: "",
+			title: "Restaurants",
+		},
 		{
 			path: "",
 			title: "Cottage",
@@ -41,8 +41,23 @@ const locationsNavlinksMobile = () => {
 	return (
 		<nav className="relative lg:hidden">
 			<div className="">
-				<div className="locations-dropdown relative text-[0.9rem] md:text-base" onClick={() => setOpen((prevState) => !prevState)}>
-					<Link to={firstLink.path} className="flex items-center gap-2 px-5 font-bold lg:font-normal text-base lg:text-[0.9rem]">
+				<div
+					className="locations-dropdown relative text-[0.9rem] md:text-base"
+					onClick={() => setOpen((prevState) => !prevState)}
+				>
+					<select className="nav-item flex items-center h-full pl-3 ">
+						{links.map((link, index) => (
+							<option value="" className="" key={index}>
+								<Link className="py-2 hover:font-bold duration-800" to={link.path}>
+									{link.title}
+								</Link>
+							</option>
+						))}
+					</select>
+					{/* <Link
+						to={firstLink.path}
+						className="flex items-center gap-2 px-5 font-bold lg:font-normal text-base lg:text-[0.9rem]"
+					>
 						{firstLink.mainTitle}
 						<span className="chevron-down mt-[0.5rem] text-xl">
 							<ion-icon className="" name={`${open ? "chevron-up" : "chevron-down"}`}></ion-icon>
@@ -60,7 +75,7 @@ const locationsNavlinksMobile = () => {
 								</Link>
 							</li>
 						))}
-					</ul>
+					</ul> */}
 				</div>
 			</div>
 		</nav>

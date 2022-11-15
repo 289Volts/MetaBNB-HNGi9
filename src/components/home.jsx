@@ -83,8 +83,8 @@ const Home = () => {
 							</a>
 						</div>
 					</div>
-					<div className="l-side md:w-[48%] xl:w-[56%]">
-						<img src="./images/about-img.svg" alt="" className="about-metaverse__img md:w-[fit-content]" />
+					<div className="l-side hidden md:block md:w-[48%] xl:w-[56%]">
+						<img src="./images/about-img.svg" alt="" className="about-metaverse__img  md:w-[fit-content]" />
 					</div>
 				</div>
 			</section>
