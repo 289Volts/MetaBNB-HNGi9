@@ -1,6 +1,5 @@
 import React from "react";
 import Place from "./place";
-// import HeroImg from "./images/hero-img"
 
 import imagesUrls from "../images.jsx";
 import "../App.css";
@@ -22,7 +21,7 @@ const Home = () => {
 	return (
 		<div className={`main-container text-center md:text-left inset-0`}>
 			<section className="hero-section flex flex-col gap-7 pb-7 mt-[6rem] md:pb-[4.1875rem] md:flex-row md:items-center md:justify-between md:w-[90%] md:mx-auto lg:w-[87%] xl:w-[80%] md:mt-[7.5rem]">
-				<div className="r-side px-4 flex flex-col gap-4 md:w-[54%] md:px-0 lg:gap-[3rem] lg:w-[60%] xl:w-[48%]">
+				<div className="r-side px-4 flex flex-col gap-4 md:w-[70%] md:px-0 lg:gap-[3rem] lg:w-[60%] xl:w-[48%]">
 					<div className="text-content">
 						<h2 className="hero-heading font-bold text-[1.7rem] leading-[1.06] mb-5 md:mb-[2.6rem] lg:text-4xl lg:leading-[1.4] xl:text-[3rem]">
 							Rent a <span className="text-meta">Place</span> away from <span className="text-meta">Home</span> in the
@@ -48,7 +47,7 @@ const Home = () => {
 					<img
 						src="./images/hero-img.png"
 						alt=""
-						className=" w-[80%] mx-auto md:mx-0 md:w-[94%] md:ml-auto lg:w-[95%] xl:w-[100%]"
+						className=" w-[80%] mx-auto md:mx-0 md:w-[84%] md:ml-auto lg:w-[95%] xl:w-[100%]"
 					/>
 				</div>
 			</section>
@@ -59,7 +58,7 @@ const Home = () => {
 					<img src="./images/brand-opensea.svg" alt="" className="w-[22%] md:w-[22%] lg:w-[16.5%]" />
 				</div>
 			</div>
-			<section className="places-container py-14 md:w-[90%] md:mx-auto lg:w-[87%] xl:w-[80%]">
+			<section className="places-container py-14 md:w-[90%] md:mx-auto lg:w-[87%] xl:w-[83%]">
 				<h2 className="places-heading font-bold text-[1.3rem] mb-6 md:text-center md:text-[2rem] lg:text-[2.5rem] lg:leading-[43px]">
 					Inspiration for your next adventure
 				</h2>

@@ -59,12 +59,12 @@ const navbar = () => {
 					</div>
 				</div>
 			</nav>
-			{showModal && <Modal setShowModal={setShowModal} />}
+			{showModal && <Modal setShowModal={() => setShowModal(false)} />}
 			{/* Mobile Nav */}
 			<div
 				className={`mobile-nav flex flex-col gap-6 bg-white fixed z-40 w-full h-screen top-[9.8%] pt-9 pl-6 duration-500 ${
 					isOpen ? "left-0" : "left-[-100%]"
-				} lg:hidden md:pl-[3.5rem]`}
+				} lg:hidden md:pl-[3.5rem] md:w-[60%]`}
 			>
 				<ul className="space-y-3">
 					{links.map((link, index) => (

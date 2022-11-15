@@ -8,7 +8,7 @@ function place(props) {
 	// 	}, [isFavourite]);
 
 	return (
-		<div className="place-container p-4 space-y-[10px] text-[0.89rem] border-2 shadow-md rounded-[14px] md:w-[48%] lg:text-[0.75rem] lg:w-[23%] lg:gap-6">
+		<div className="place-container p-4 space-y-[10px] text-[0.89rem] border-2 shadow-md rounded-[14px] md:w-[48%] lg:text-[0.75rem] lg:w-[24%] lg:gap-6">
 			<div className="place-img relative">
 				<img src={props.img} alt="" className="w-full" />
 				<div className="heart absolute top-[5%] right-[5%] cursor-pointer" onClick={() => setIsFavorite((prevState) => !prevState)}>
