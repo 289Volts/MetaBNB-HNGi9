@@ -76,7 +76,9 @@ const navbar = () => {
 					))}
 				</ul>
 				<div className="nav-cta">
-					<Button openModal={(() => setShowModal(true))} />
+					<Link to="/" onClick={() => setIsOpen(!isOpen)}>
+						<Button openModal={() => setShowModal(true)} />
+					</Link>
 				</div>
 			</div>
 		</>
