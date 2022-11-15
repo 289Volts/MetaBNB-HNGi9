@@ -60,10 +60,10 @@ const Home = () => {
 				</div>
 			</div>
 			<section className="places-container py-14 md:w-[90%] md:mx-auto lg:w-[87%] xl:w-[80%]">
-				<h2 className="places-heading font-bold text-[1.5rem] mb-5 md:text-center md:text-[2rem] lg:text-[2.5rem] lg:leading-[43px]">
+				<h2 className="places-heading font-bold text-[1.3rem] mb-6 md:text-center md:text-[2rem] lg:text-[2.5rem] lg:leading-[43px]">
 					Inspiration for your next adventure
 				</h2>
-				<div className="places px-3 flex flex-col gap-6 md:px-0 md:flex-row md:flex-wrap md:justify-between lg:gap-0">
+				<div className="places px-4 flex flex-col gap-6 md:px-0 md:flex-row md:flex-wrap md:justify-between lg:gap-0">
 					{places}
 				</div>
 			</section>
