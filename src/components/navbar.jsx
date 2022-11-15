@@ -77,7 +77,6 @@ const navbar = ({ openModal }) => {
 				</ul>
 				<div className="nav-cta">
 					<Button openModal={() => setShowModal(true)} />
-					<button className="py-3 px-6 bg-buttonColor text-white rounded-[10px]">Connect wallet</button>
 				</div>
 			</div>
 		</>
