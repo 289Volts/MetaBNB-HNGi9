@@ -25,9 +25,9 @@ const footer = () => {
 						</div>
 					</div>
 				</div>
-				<div className="footer-links flex flex-col justify-between mb-7 gap-4 md:flex-row md:gap-0 md:w-[56%] md:text-left lg:translate-x-[-4rem]">
+				<div className="footer-links flex flex-col justify-between mb-7 gap-6 md:flex-row md:gap-0 md:w-[56%] md:text-left lg:translate-x-[-4rem]">
 					<div className="footer-links__community flex flex-col text-[0.85rem] md:text-[0.875rem]">
-						<h2 className="footer-links__community-heading text-base font-bold mb-[1.275rem] md:text-[1.125rem]">
+						<h2 className="footer-links__community-heading text-lg font-bold mb-[1.275rem] md:text-[1.125rem]">
 							Community
 						</h2>
 						<div className="space-y-3 flex flex-col">
@@ -46,7 +46,7 @@ const footer = () => {
 						</div>
 					</div>
 					<div className="footer-links__places flex flex-col text-[0.85rem] md:text-[0.875rem]">
-						<h2 className="footer-links__places-heading text-base font-bold mb-[1.275rem] md:text-[1.125rem]">
+						<h2 className="footer-links__places-heading text-lg font-bold mb-[1.275rem] md:text-[1.125rem]">
 							Places
 						</h2>
 						<div className="flex flex-col space-y-3">
@@ -65,7 +65,7 @@ const footer = () => {
 						</div>
 					</div>
 					<div className="footer-links__about-us flex flex-col text-[0.85rem] md:text-[0.875rem]">
-						<h2 className="footer-links__about-us-heading text-base font-bold mb-[1.275rem] md:text-[1.125rem]">
+						<h2 className="footer-links__about-us-heading text-lg font-bold mb-[1.275rem] md:text-[1.125rem]">
 							About-us
 						</h2>
 						<div className="flex flex-col space-y-3">
@@ -84,7 +84,7 @@ const footer = () => {
 						</div>
 					</div>
 				</div>
-				<div className="footer-social-links__mobile flex flex-col gap-3 mt-3 md:hidden">
+				<div className="footer-social-links__mobile flex flex-col gap-3 mt-5 md:hidden">
 					<div className="footer-social-links flex gap-5">
 						<a href="" className="footer-social-link">
 							<img src="./icons/facebook.svg" alt="" className="" />
