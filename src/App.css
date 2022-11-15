@@ -36,7 +36,7 @@ input:focus {
 }
 
 .images {
-    animation: slide 15s linear infinite forwards;
+    /* animation: slide 15s linear infinite forwards; */
 }
 
 @keyframes slide {

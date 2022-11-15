@@ -62,21 +62,21 @@ const navbar = () => {
 			{showModal && <Modal setShowModal={setShowModal} />}
 			{/* Mobile Nav */}
 			<div
-				className={`mobile-nav flex flex-col gap-6 bg-white fixed z-40 w-full h-screen top-[11%] pt-9 pl-6 duration-500 ${
+				className={`mobile-nav flex flex-col gap-6 bg-white fixed z-40 w-full h-screen top-[9.8%] pt-9 pl-6 duration-500 ${
 					isOpen ? "left-0" : "left-[-100%]"
 				} lg:hidden md:pl-[3.5rem]`}
 			>
 				<ul className="space-y-3">
 					{links.map((link, index) => (
 						<li key={index} className="nav-item">
-							<Link className="inline-block w-[50%] py-2" to={link.path}>
+							<Link onClick={() => setIsOpen(!isOpen)} className="inline-block w-[50%] py-2" to={link.path}>
 								{link.title}
 							</Link>
 						</li>
 					))}
 				</ul>
 				<div className="nav-cta">
-					<Button openModal={() => setShowModal(true)} />
+					<Button openModal={(() => setShowModal(true))} />
 				</div>
 			</div>
 		</>

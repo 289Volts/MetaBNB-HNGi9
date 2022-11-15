@@ -52,18 +52,18 @@ const Home = () => {
 					/>
 				</div>
 			</section>
-			<div className="clients overflow-hidden  bg-buttonColor">
-				<div className="images py-2 flex gap-[4rem] translate-x-full md:animate-none md:translate-x-0 md:justify-between md:px-16 lg:w-[80%] lg:mx-auto lg:px-0">
-					<img src="./images/brand-mbtoken.svg" alt="" className="w-[36%] md:w-[22%] lg:w-[16.5%]" />
-					<img src="./images/brand-metamask.svg" alt="" className="w-[36%] md:w-[22%] lg:w-[16.5%]" />
-					<img src="./images/brand-opensea.svg" alt="" className="w-[36%] md:w-[22%] lg:w-[16.5%]" />
+			<div className="clients  bg-buttonColor">
+				<div className="images py-2 flex justify-center gap-[3rem] md:animate-none md:translate-x-0 md:justify-between md:px-16 lg:w-[80%] lg:mx-auto lg:px-0">
+					<img src="./images/brand-mbtoken.svg" alt="" className="w-[22%] md:w-[22%] lg:w-[16.5%]" />
+					<img src="./images/brand-metamask.svg" alt="" className="w-[22%] md:w-[22%] lg:w-[16.5%]" />
+					<img src="./images/brand-opensea.svg" alt="" className="w-[22%] md:w-[22%] lg:w-[16.5%]" />
 				</div>
 			</div>
 			<section className="places-container py-14 md:w-[90%] md:mx-auto lg:w-[87%] xl:w-[80%]">
 				<h2 className="places-heading font-bold text-[1.3rem] mb-6 md:text-center md:text-[2rem] lg:text-[2.5rem] lg:leading-[43px]">
 					Inspiration for your next adventure
 				</h2>
-				<div className="places px-4 flex flex-col gap-6 md:px-0 md:flex-row md:flex-wrap md:justify-between lg:gap-0">
+				<div className="places px-5 flex flex-col gap-6 md:px-0 md:flex-row md:flex-wrap md:justify-between lg:gap-0">
 					{places}
 				</div>
 			</section>
