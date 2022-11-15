@@ -46,7 +46,7 @@ const Home = () => {
 				</div>
 				<div className="l-side ">
 					<img
-						src="./images/hero-img.svg"
+						src="./images/hero-img.png"
 						alt=""
 						className=" w-[80%] mx-auto md:mx-0 md:w-[94%] md:ml-auto lg:w-[95%] xl:w-[100%]"
 					/>

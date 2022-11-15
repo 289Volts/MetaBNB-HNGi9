@@ -6,7 +6,7 @@ const footer = () => {
 			<div className="text-white py-9 px-5 md:flex md:justify-between md:w-[90%] md:mx-auto md:px-0 md:pt-[3.875rem] lg:w-[81.5%] xl:w-[78%]">
 				<div className="footer-logo-w-social-links md:flex md:flex-col md:justify-between">
 					<a href="/" className="footer-logo mb-7 block md:mb-0">
-						<img src="./images/logo-white.svg" alt="" className="mx-auto md:w-[74%] md:mx-0 lg:w-[82%]" />
+						<img src="./images/logo-white.svg" alt="" className="mr-auto md:w-[74%] md:mx-0 lg:w-[82%]" />
 					</a>
 					<div className="footer-social-links-w-copyright hidden md:flex md:flex-col md:gap-14">
 						<div className="footer-social-links flex md:gap-9">
@@ -25,7 +25,7 @@ const footer = () => {
 						</div>
 					</div>
 				</div>
-				<div className="footer-links flex justify-between mb-7 text-center md:w-[56%] md:text-left lg:translate-x-[-4rem]">
+				<div className="footer-links flex flex-col justify-between mb-7 gap-4 md:flex-row md:gap-0 md:w-[56%] md:text-left lg:translate-x-[-4rem]">
 					<div className="footer-links__community flex flex-col text-[0.85rem] md:text-[0.875rem]">
 						<h2 className="footer-links__community-heading text-base font-bold mb-[1.275rem] md:text-[1.125rem]">
 							Community
@@ -85,7 +85,7 @@ const footer = () => {
 					</div>
 				</div>
 				<div className="footer-social-links__mobile flex flex-col gap-3 mt-3 md:hidden">
-					<div className="footer-social-links flex justify-center gap-5">
+					<div className="footer-social-links flex gap-5">
 						<a href="" className="footer-social-link">
 							<img src="./icons/facebook.svg" alt="" className="" />
 						</a>
@@ -96,7 +96,7 @@ const footer = () => {
 							<img src="./icons/twitter.svg" alt="" className="" />
 						</a>
 					</div>
-					<div className="footer-copyright text-center">
+					<div className="footer-copyright">
 						<p>&copy; 2022 Metabnb</p>
 					</div>
 				</div>
