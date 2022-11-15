@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Button from "../components/button";
 import Modal from "../components/modal";
 
-const navbar = ({ openModal }) => {
+const navbar = () => {
 	const links = [
 		{
 			path: "/",
