@@ -36,7 +36,7 @@ const Home = () => {
 					<div className="input-field flex md:justify-start md:w-[92%] xl:w-[85%]">
 						<input
 							type="text"
-							className="border-[#A3A3A3] border-[1px] p-[0.4rem] px-[0.5rem] border-solid w-[65%] rounded-tl-[4px] rounded-bl-[4px] lg:p-[0.7rem]"
+							className="border-[#A3A3A3] border-[1px] p-[0.4rem] px-[0.5rem] border-solid w-[66%] rounded-tl-[4px] rounded-bl-[4px] lg:p-[0.7rem]"
 							placeholder="Search for location"
 						/>
 						<button className=" bg-buttonColor text-white py-[0.4rem] w-[35%] rounded-tr-[4px] rounded-br-[4px]">
