@@ -2,9 +2,9 @@ import React from "react";
 import Logo from "/images/logo-gradient.svg";
 import { Link } from "react-router-dom";
 import Button from "../components/button";
-import Modal from "./modal";
+import Modal from "../components/modal";
 
-const navbar = () => {
+const navbar = ({ openModal }) => {
 	const links = [
 		{
 			path: "/",
@@ -25,6 +25,7 @@ const navbar = () => {
 	];
 
 	const [isOpen, setIsOpen] = React.useState(false);
+	const [showModal, setShowModal] = React.useState(false);
 
 	return (
 		<>
@@ -46,22 +47,23 @@ const navbar = () => {
 						</ul>
 						<div className="flex items-center gap-5 ">
 							<div className="nav-cta hidden md:flex">
-								<Button />
+								<Button openModal={() => setShowModal(true)} />
 							</div>
 							<div
 								className="toggle text-3xl text-meta mt-[0.6rem] md:text-[2.7rem] md:mt-[0.24rem] lg:hidden"
 								onClick={() => setIsOpen((prevState) => !prevState)}
 							>
-								<ion-icon name={`${open ? "close" : "menu"}`}></ion-icon>
+								<ion-icon name={`${isOpen ? "close" : "menu"}`}></ion-icon>
 							</div>
 						</div>
 					</div>
 				</div>
 			</nav>
+			{showModal && <Modal setShowModal={setShowModal} />}
 			{/* Mobile Nav */}
 			<div
 				className={`mobile-nav flex flex-col gap-6 bg-white fixed z-40 w-full h-screen top-[11%] pt-9 pl-6 duration-500 ${
-					open ? "left-0" : "left-[-100%]"
+					isOpen ? "left-0" : "left-[-100%]"
 				} lg:hidden md:pl-[3.5rem]`}
 			>
 				<ul className="space-y-3">
@@ -74,10 +76,10 @@ const navbar = () => {
 					))}
 				</ul>
 				<div className="nav-cta">
-					<Button onClick={() => setIsOpen(true)} />
+					{/* <Button onClick={() => setIsOpen(true)} /> */}
+					<button className="py-3 px-6 bg-buttonColor text-white rounded-[10px]">Connect wallet</button>
 				</div>
 			</div>
-			
 		</>
 	);
 };
